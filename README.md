@@ -1,4 +1,2 @@
-# AIML_Class_Work
-Class 
-<br>
-import java.util.*;
+#AIML_Lab_Exp
+Contian Lab Experiments of AIML
