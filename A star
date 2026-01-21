@@ -1,0 +1,37 @@
+A*(start, goal)
+
+OPEN ← {start}
+CLOSED ← ∅
+
+g(start) ← 0
+f(start) ← g(start) + h(start)
+parent(start) ← NIL
+
+WHILE OPEN is not empty DO
+
+    n ← node in OPEN with minimum f(n)
+
+    IF n = goal THEN
+        RETURN path from start to goal using parent pointers
+
+    REMOVE n from OPEN
+    ADD n to CLOSED
+
+    FOR each neighbor of n DO
+
+        new_cost ← g(n) + cost(n, neighbor)
+
+        IF neighbor ∈ CLOSED AND new_cost ≥ g(neighbor) THEN
+            CONTINUE
+
+        IF neighbor ∉ OPEN OR new_cost < g(neighbor) THEN
+            parent(neighbor) ← n
+            g(neighbor) ← new_cost
+            f(neighbor) ← g(neighbor) + h(neighbor)
+
+            IF neighbor ∉ OPEN THEN
+                ADD neighbor to OPEN
+
+END WHILE
+
+RETURN failure
