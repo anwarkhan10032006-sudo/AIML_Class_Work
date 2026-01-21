@@ -1,5 +1,4 @@
 N = 8
-
 def is_safe(board, row, col):
     for i in range(row):
         if board[i] == col or abs(board[i] - col) == abs(i - row):
