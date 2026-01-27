@@ -3,9 +3,11 @@
 This project demonstrates the N-Queens problem using a simple Python backtracking implementation suitable for beginners.
 It finds a valid arrangement of N queens on a chessboard such that no two queens attack each other.
 
+---
+
 #Pseudocode of N-Queens Problem
 
-```
+```text
 N-QUEENS(N)
 
 board ← array of size N initialized to -1
