@@ -1,7 +1,7 @@
 # Backward Chaining
 Idea
 
-Start with known facts and apply rules repeatedly to infer new facts until a goal is reached or no new facts can be derived.
+Start with a goal and work backwards to check if existing facts can prove it.
 --- 
 
 # Pseudocode for Backward chaining 
