@@ -72,6 +72,4 @@ print("• Testing Accuracy: {:.2f}%".format(test_acc * 100))
 print("• Training Loss: {:.4f}".format(train_loss))
 print("• Testing Loss: {:.4f}".format(test_loss))
 
-print("\nInference")
-print("The ANN effectively learned complex patterns from the dataset through hidden layers and non-linear activation functions.")
-print("This experiment confirms that neural networks are powerful tools for classification problems and can outperform traditional machine learning models when sufficient data and tuning are provided.")
+#use  py -3.10 ann_tf.py    to run
